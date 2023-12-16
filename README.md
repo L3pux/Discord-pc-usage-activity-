@@ -29,6 +29,12 @@ Screenshot of how it looks like:
 ```
 python l3xactivity.py
 ```
+## to add your image:
+
+1- Go to rich presence > art assets
+
+2- click on Add Image(s) and name the image "status"
+
 ## Notes:
 * currently it's only for linux but I might make another program for windows
 
