@@ -7,7 +7,7 @@ import subprocess
 distro_name = distro.name() if platform.system() == "Linux" else "Unknown"
 
 start = int(time.time())
-client_id = "EnterYourID" 
+client_id = "YourID"
 RPC = Presence(client_id)
 RPC.connect()
 
@@ -29,12 +29,10 @@ def ram():
         print(f"huh? {e}")
     return None
 
-uptime_seconds = time.monotonic()
-formatted_uptime = format_uptime(uptime_seconds)
-
 while True:
     current_ram = ram()
     additional_info = "Some additional information"  # Add more information here
+    uptime_seconds = time.monotonic()  # Update uptime_seconds within the loop
     formatted_uptime = format_uptime(uptime_seconds)
 
     RPC.update(
@@ -45,8 +43,3 @@ while True:
         start=start,
     )
     time.sleep(15)
-
-
-
-
- 
