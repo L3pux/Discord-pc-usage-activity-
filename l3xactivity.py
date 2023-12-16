@@ -7,7 +7,7 @@ import subprocess
 distro_name = distro.name() if platform.system() == "Linux" else "Unknown"
 
 start = int(time.time())
-client_id = "ClientIDhere" 
+client_id = "EnterYourID" 
 RPC = Presence(client_id)
 RPC.connect()
 
